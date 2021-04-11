@@ -6,7 +6,7 @@ import {
 export default function Login( ) {
   return (
     <Container>
-      <View>Login</View>
+      <Text>Login</Text>
     </Container>
   );
 }
