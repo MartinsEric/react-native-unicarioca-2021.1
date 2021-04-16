@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, Image } from 'react-native';
 import {
   Container,
   CaixaLogin,
@@ -8,14 +8,48 @@ import {
   Botao,
   BotaoTexto,
   InputText,
-  Input
+  Input,
+  EsqueciSenha,
+  EsquecinhaTexto,
+  ContainerBotoes,
+  ContainerBotaoLogin,
+  BotaoLogin,
+  BotaoLoginTexto,
+  Logo,
+  ContainerTexto,
+  TextoChamada,
+  BackgrounImage
 } from './styles';
+import logoImg from '../../../assets/logo.png';
+import img from '../../../assets/login_background.png';
+
 export default function Login() {
 
   const [botaoAtual, setBotaoAtual] = useState('aluno')
 
   return (
+
     <Container>
+        <BackgrounImage source ={img} />
+      <Logo>
+        <Image source={logoImg}
+          style={{
+            width: 300, height: 100
+          }} />
+      </Logo>
+      <ContainerTexto>
+        <TextoChamada>
+          Problemas para formar
+  </TextoChamada>
+        <TextoChamada>
+          um grupo de trabalho?
+  </TextoChamada>
+        <TextoChamada>
+          O Grupou resolve!
+  </TextoChamada>
+      </ContainerTexto>
+
+
       <CaixaLogin>
         <ContainerBotaoes>
           <Botao ultimoClick={botaoAtual == 'aluno' ? true : false}
@@ -29,12 +63,38 @@ export default function Login() {
         </ContainerBotaoes>
         <ContainerInputs>
 
-        <InputText>Email</InputText>
-        <Input />
-        <InputText>Senha</InputText>
-        <Input />
+          <InputText>Email</InputText>
+          <Input />
+          <InputText>Senha</InputText>
+          <Input />
 
         </ContainerInputs>
+
+        <EsqueciSenha>
+          <EsquecinhaTexto>
+            Esqueci minha senha.
+           </EsquecinhaTexto>
+        </EsqueciSenha>
+
+        <ContainerBotaoLogin>
+
+          <BotaoLogin inverter={false}>
+
+            <BotaoLoginTexto inverter={false}>
+              cadastre-se
+            </BotaoLoginTexto>
+
+          </BotaoLogin>
+
+          <BotaoLogin inverter={true}>
+
+            <BotaoLoginTexto inverter={true}>
+              entrar
+            </BotaoLoginTexto>
+
+          </BotaoLogin>
+        </ContainerBotaoLogin>
+
       </CaixaLogin>
     </Container>
   );
