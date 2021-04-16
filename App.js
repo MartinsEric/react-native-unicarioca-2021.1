@@ -1,6 +1,11 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+
+import Dashboard from './src/pages/Dashboard';
 import Login from './src/pages/Login';
-export default function App( ) {
-  return(<Login />);
+
+export default function App() {
+  return (
+    <Dashboard></Dashboard>
+    // <Login></Login>
+  );
 }
