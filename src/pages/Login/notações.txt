@@ -1,0 +1,13 @@
+Elaboração da page LOGIN.
+
+primeira camada dividir em 3 blocos.
+1- para o icone Grupou!
+2- Descrição
+3-Conteiner Branco
+    - SubConteiner dos bodões Alun e Professor
+        * alinhamento row
+    -SubConteiner Caixas Email e Senha
+        * colomn
+    - SubConteiner dos botões Cadastre-se e Entrada
+    
+
