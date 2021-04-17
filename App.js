@@ -1,21 +1,15 @@
-
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Cadastro from './src/pages/Cadastro'
 
+import Dashboard from './src/pages/Dashboard';
+import Login from './src/pages/Login';
+import ProfessorOuAluno from './src/pages/ProfessorOuAluno';
+import Cadastro from './src/pages/Cadastro'
 
 export default function App() {
   return (
-    <Cadastro> </Cadastro>
-
+    <Dashboard></Dashboard>
+    //<ProfessorOuAluno></ProfessorOuAluno>
+    // <Login></Login> 
+    // <Cadastro> </Cadastro>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
