@@ -34,7 +34,7 @@ export default function Login() {
       <Logo>
         <Image source={logoImg}
           style={{
-            width: 300, height: 100
+            width: 310, height: 100
           }} />
       </Logo>
       <ContainerTexto>
