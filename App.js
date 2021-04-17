@@ -1,13 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
+
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Cadastro from './src/pages/Cadastro'
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>grupou!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Cadastro> </Cadastro>
+
   );
 }
 
